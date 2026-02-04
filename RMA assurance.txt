@@ -1,0 +1,50 @@
+Vous êtes dans le mauvais répertoire. Exécution depuis le bon répertoire :
+
+
+[1 tool called]
+
+Génération réussie. Vérifions les fichiers créés :
+
+
+[1 tool called]
+
+## Exécutable généré
+
+Votre application desktop est prête. Voici ce qui a été créé :
+
+### Fichiers dans le dossier `release/`
+
+1. **`RMA Assurance Setup 1.0.0.exe`** — Installateur Windows
+   - Double-cliquez pour installer l'application
+   - Créera un raccourci sur le bureau et dans le menu Démarrer
+   - Version installable pour Windows (x64 et ia32)
+
+2. **`win-unpacked/`** — Version portable (64-bit)
+   - Exécutez `RMA Assurance.exe` directement
+   - Pas besoin d'installation
+   - Utile pour tester ou distribuer sans installer
+
+3. **`win-ia32-unpacked/`** — Version portable (32-bit)
+   - Pour les anciens systèmes Windows 32-bit
+
+### Comment utiliser
+
+**Option 1 : Installer (recommandé)**
+- Double-cliquez sur `RMA Assurance Setup 1.0.0.exe`
+- Suivez l'assistant d'installation
+- L'application sera disponible dans le menu Démarrer
+
+**Option 2 : Version portable**
+- Allez dans `win-unpacked/`
+- Double-cliquez sur `RMA Assurance.exe`
+- L'application démarre sans installation
+
+### Important
+
+- Assurez-vous d'être dans le bon répertoire : `C:\wamp64\www\rma-assurance-reclamation-main`
+- Pour régénérer l'exécutable après des modifications, exécutez à nouveau :
+  ```bash
+  npm run electron:build:win
+  ```
+
+L'application est prête à être distribuée.
